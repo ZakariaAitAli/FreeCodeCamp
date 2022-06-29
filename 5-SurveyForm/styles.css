@@ -1,0 +1,345 @@
+body {
+    margin: auto;
+    color: #432;
+    background-color : #3E3E3E;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 300px;
+  }
+  
+  header {
+    background-color : #465444;
+    text-align       : center;
+  }
+  
+  h1 , h2 {
+    color : rgb(255, 254, 249);
+  }
+  
+  h1 , h2 , h3 , h4 {
+    font-family : 'PT Sans', sans-serif;
+  }
+  
+  h3 , h4 {
+    color : #432;
+  }
+  
+  h1 {
+    display : inline-block;
+  }
+  
+  h2 {
+    font-weight : lighter;
+  }
+  
+  h3 {
+    text-align : center;
+  }
+  
+  p {
+    font-family : 'Montserrat' , sans-serif;
+  }
+  
+  h1 {
+    background : #FD9D1E;
+    box-shadow : 5px 5px 15px #193200;
+  }
+  .fab {
+    padding: .3em;
+  }
+  @media
+    only screen
+    and (max-width : 600px) {
+    h1 {
+      padding : 20px;
+      font-size : 1.4em;
+    }
+  
+    h2 {
+      padding-bottom : 8px;
+      font-size : 1em;
+    }
+  
+    h3 {
+      font-size : 1.1em;
+        padding-top: 15px;
+    }
+  
+    img {
+      width : 50px;
+      padding-right : 10px;
+    }
+  }
+  
+  @media
+    only screen
+    and (min-width : 600px) {
+    h1 {
+      padding   : 20px 30px;
+      font-size : 1.6em;
+    }
+  
+    h2 {
+      padding-bottom : 12px;
+      font-size      : 1.4em;
+    }
+  
+    img {
+      width : 60px;
+      padding-right : 15px;
+    }
+  }
+  
+  @media
+    only screen
+    and (min-width : 900px) {
+    h1 {
+      padding: 20px 40px;
+      box-shadow : 5px 5px 15px #193200;
+      font-size: 1.8em;
+    }
+  
+    h2 {
+      padding : 0 5px 20px;
+      font-size : 1.6em;
+      font-weight : 300;
+    }
+  
+    img {
+      width : 70px;
+      padding-right : 20px;
+    }
+  }
+  
+  div {
+    display : block;
+    background-color : white;
+    box-shadow : 2px 2px 6px rgba(63, 58, 48, 0.6);
+    text-align : left;
+  }
+  
+  form {
+    color : rgb(54, 50, 44);
+    background : rgb(254, 254, 253);
+  }
+  
+  @media
+    only screen
+    and (max-width : 600px) {
+    div {
+      width : 92%;
+      margin: 0 auto;
+      box-shadow : none;
+    }
+  
+    .empty-space {
+      height: 20px;
+    }
+    textarea {
+      width: 92%;
+    }
+    button {
+      display : block;
+      margin: 5px auto;
+      padding : 15px 32px;
+      font-size : 16px;
+      width: 92%;
+      }
+    form {
+      padding-bottom: 5px;
+    }
+  }
+  
+  @media
+    only screen
+    and (min-width : 601px) {
+    div {
+      padding    : 15px;
+      text-align : left;
+    }
+  
+    form {
+      display : block;
+      width : 70%;
+      max-width : 650px;
+      margin : 50px auto;
+      padding : 40px;
+      border : solid 7px #3CBC8D;
+      border-radius : 10px;
+  
+    }
+    .empty-space {
+        height : 30px;
+    }
+    #personal, #roles, #likes, #improve, #recommend, #suggestions {
+      box-shadow: none;
+    }
+    button {
+      display : block;
+      margin: 5px auto;
+      padding : 15px 32px;
+      color : white;
+      opacity : 0.9;
+      font-size : 18px;
+      width: 96%;
+      cursor : pointer;
+    }
+  }
+  
+  @media
+    only screen
+    and (min-width : 900px) {
+    form {
+      display : grid;
+      width : 80%;
+      max-width : 900px;
+      margin : 50px auto;
+      padding : 50px;
+      border : solid 10px #3CBC8D;
+      border-radius : 10px;
+      grid-gap : 10px;
+      grid-template-columns : 50% 50%;
+    }
+  
+    #personal {
+      background-color : white;
+      box-shadow : 2px 2px 6px rgba(63, 58, 48, 0.6);
+      grid-row : 1 / 4;
+    }
+  
+    .empty-space {
+        height: 45px;
+    }
+  
+    button {
+      display: grid;
+      margin: 25px 15px;
+      padding: 15px 32px;
+      color: white;
+      opacity: 0.9;
+      border: none;
+      background-color: #008CBA;
+      outline : none;
+      text-align: center;
+      text-decoration : none;
+      font-size: 16px;
+      grid-column: 1 / 3;
+      cursor: pointer;
+    }
+  
+  
+  }
+  
+  /* end of @media */
+  
+  *::placeholder {
+    color : white;
+  }
+  
+  textarea::placeholder {
+    padding: 5px;
+    color : rgb(205, 204, 200);
+  }
+  
+  input[list], input[type=email], input[type=number], input[type=text], select {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    background-color: rgba(60, 187, 141, 0.63);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+  
+  }
+  
+  input[list]:focus, input[type=email]:focus, input[type=number]:focus, input[type=text]:focus, select:focus {
+    color : #3CBC8D;
+    background-color : white;
+  }
+  
+  #personal {
+    background-color : white;
+  }
+  
+  button {
+    padding: 15px 32px;
+    color: white;
+    opacity: 0.9;
+    border: none;
+    background-color : #008CBA;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  button:hover {
+    opacity : 1;
+  }
+  
+  button:active {
+    background-color : #FD9D1E;
+  }
+  
+  textarea {
+    width: 98%;
+    height: 120px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: solid 1px rgb(205, 204, 200);
+    background-color: white;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    resize: none;
+  }
+  
+  .empty-space {
+    box-shadow : none;
+  }
+  
+  .lspace {
+    margin-left : 15px;
+  }
+  
+  .wrapper {
+    display    : contents;
+    text-align : center;
+  }
+  
+  .indent {
+    padding-left : 15px;
+  }
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(60, 187, 141, 0.63);;
+    line-height: 1.5em;
+    outline: 0;
+    background-color:   rgba(60, 187, 141, 0.63);
+    color: white;
+    padding: 12px 20px;
+  }
+  
+  #roles, #likes {
+      border-radius: 0px;
+  }
+  
+  footer {
+    text-align:center;
+    font-family: monospace;
+    font-size: small;
+    color: rgb(254, 254, 253);
+    padding: 5px 0 12px 0;
+  }
+  
+  a {
+    color: #99e0f7;
+    text-decoration: none;
+  }
+  a:hover {
+    color : #FD9D1E;
+  }
+  
